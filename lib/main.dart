@@ -19,10 +19,7 @@ import 'sample/FirebaseRealtimeDatabaseSample.dart';
 import 'sample/DioSample.dart';
 import 'sample/SharedPreferencesSample.dart';
 import 'sample/NavigatorSample.dart';
-import 'sample/FlutterRiverpodSample.dart';
-import 'sample/JsonSerializableDir/JsonSerializableSample.dart';
 import 'sample/RestApi.dart';
-import 'sample/HooksRiverpod/HooksRiverpodSampleMenu.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -105,63 +102,6 @@ class SampleMenu extends StatelessWidget {
                             centerTitle: true,
                           ),
                           body: const RestApi(title: 'Rest Api'),
-                        )));
-          },
-        ),
-
-        //JsonSerializableSample.dart
-        ElevatedButton(
-          child: const Text("Json Serializable Sample"),
-          onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => Scaffold(
-                          appBar: AppBar(
-                            title: const Text(
-                              'Json Serializable Sample',
-                            ),
-                            centerTitle: true,
-                          ),
-                          body: JsonSerializableSample(),
-                        )));
-          },
-        ),
-
-        //HooksRiverpodSample.dart
-        ElevatedButton(
-          child: const Text("Hooks Riverpod Sample"),
-          onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => Scaffold(
-                          appBar: AppBar(
-                            title: const Text(
-                              'Hooks Riverpod Sample',
-                            ),
-                            centerTitle: true,
-                          ),
-                          body: const HooksRiverpodSampleMenu(),
-                        )));
-          },
-        ),
-
-        //FlutterRiverpodSample.dart
-        ElevatedButton(
-          child: const Text("FlutterRiverpodSample"),
-          onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => Scaffold(
-                          appBar: AppBar(
-                            title: const Text(
-                              'FlutterRiverpod Sample',
-                            ),
-                            centerTitle: true,
-                          ),
-                          body: FlutterRiverpodSample(),
                         )));
           },
         ),
